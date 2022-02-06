@@ -1,0 +1,98 @@
+#id_confirm_password{
+    margin-left: 5%;
+}
+#id_password{
+    margin-left: 13.5%;
+}
+#id_phone{
+    margin-left: 17%;
+}
+#id_profile_pic{
+    margin-left: 13%;
+    border: 0px ;
+}
+#id_email{
+    margin-left: 9%;
+}
+#id_username{
+    margin-left: 13%;
+}
+#id_last_name{
+    margin-left: 12.75%;
+}
+#id_first_name{
+    margin-left: 12.5%;
+}
+input{
+    border-radius: 4px;
+    width: 30%;
+    border: 1px solid ;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
+input[type=submit]{
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 10%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 15px;
+}
+button{
+    font-size: 12px;
+    font-weight: 600;
+    background: #3cc5e0;
+    border: 1px solid #39b8d1;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.register{
+    margin-left: 40%;
+}
+.login{
+    margin-right: 20%;
+}
+.container{
+    margin-top: 30px;
+}
+
+label[for=username-login],[for=password-login]{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.password-login{
+    display: block;
+    margin-bottom: 15px;
+}
+.navbar-dark{
+    height: 2%
+}

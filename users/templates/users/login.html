@@ -1,0 +1,45 @@
+{% extends 'users/base.html' %}
+
+{% block body_block %}
+
+  <div class="container">
+      <h1>Login</h1>
+
+{#      {% if form.errors %}#}
+{#        {% for field in form %}#}
+{#            {% for error in field.errors %}#}
+{#                <div class="alert alert-danger">#}
+{#                    <strong>{{ error|escape }}</strong>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        {% endfor %}#}
+{#        {% for error in form.non_field_errors %}#}
+{#            <div class="alert alert-danger">#}
+{#                <strong>{{ error|escape }}</strong>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#      {% endif %}#}
+      {% if messages %}
+        {% for message in messages %}
+            alert(message);
+        {% endfor %}
+      {% endif %}
+
+        <form method="post" action="{% url 'users:user_login' %}">
+              {% csrf_token %}
+
+        <label for="username-login">Username</label>
+        <input class="username-login" type="text" name="username" placeholder="Username" >
+
+        <label for="password-login">Password</label>
+        <input class="password-login" type="password" name="password" placeholder="Password">
+
+        <input type="submit" name="" value="Login">
+        </form>
+
+        <button class="btn btn-primary mb-2">
+            <a href="{% url 'social:begin' 'facebook' %}" style="color:white">Login with Facebook</a>
+        </button>
+  </div>
+
+{% endblock %}

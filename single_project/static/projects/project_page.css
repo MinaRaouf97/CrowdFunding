@@ -1,0 +1,149 @@
+.report:hover {
+    background-color: rgb(214, 211, 0) !important;
+}
+.cancel:hover {
+    background-color: rgb(129, 0, 0) !important;
+}
+
+.availableMsg {
+    color: green;
+}
+.unavailableMsg {
+    color: rgb(165, 0, 0);
+}
+.projectArea {
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 15px;
+    border-radius: 15px;
+}
+.projectDescription{
+    font-size: 22px
+}
+.projectTitle{
+    background: rgba(187, 187, 187, 0.555);
+    padding-left:5%;
+    border-radius: 20px
+}
+.rate-area {
+    float: left;
+    border-style: none;
+}
+/* 
+.rate-area:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+} */
+
+.rate-area:not(:checked) > label {
+    float: right;
+    width: 1em;
+    padding: 0 0.1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 220%;
+    line-height: 1.2;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rate-area:not(:checked) > label:before {
+    content: "★ ";
+}
+
+.rate-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+    font-size: 220% !important;
+}
+
+.rate-area:not(:checked) > label:hover,
+.rate-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+
+.rate-area > input:checked + label:hover,
+.rate-area > input:checked + label:hover ~ label,
+.rate-area > input:checked ~ label:hover,
+.rate-area > input:checked ~ label:hover ~ label,
+.rate-area > label:hover ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.donatedAmount,.rating,.userName{
+    font-size: 22px;
+    line-height:50px;
+}
+.comment{
+    font-size: 21px
+}
+#comment {
+    color: rgba(255, 255, 255, 0.815);
+}
+#comment:hover {
+    background-color: rgba(112, 146, 240, 0.815) !important;
+}
+
+.star {
+    font-size: 20px;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid rgb(83, 81, 209);
+    -webkit-box-shadow: 0 1px 0 0 black;
+    box-shadow: 0 1px 0 0 rgb(83, 81, 209);
+}
+
+.active {
+    color: rgb(34, 32, 156) !important;
+}
+
+/* errors */
+.error {
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border: rgb(138, 32, 32) solid 1px;
+    border-radius: 10px;
+}
+
+.project {
+    background: rgb(193, 211, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.donation,.actions{
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 20px;
+    padding: 20px;
+    font-size:20px;
+}
+.tags{
+margin-top: 4%
+}
+.tag{
+    padding: 2%;
+    margin: 2%;
+    border: rgb(20, 20, 158) 1px solid;
+    border-radius:4px;
+    background: rgb(212, 204, 246)
+}

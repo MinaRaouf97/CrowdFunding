@@ -1,0 +1,27 @@
+{% extends 'projects/layout.html' %}
+
+{% block content %}
+
+<h1>Search Result </h1>
+
+<div class="list-group container">
+
+{%for project in result %}
+  <a href={% url 'project_details' project.id %} class="list-group-item list-group-item-action list-group-item-dark  {% if forloop.first %}  active {% endif %}">
+    <div class="row">
+        <div class="col-md-4"> 
+            <img width="240" height="120" src="{{project.img}}" alt="Card image cap"/>
+        </div>
+        <div class="col-md-8">
+                  <h5 class="mb-1">{{project.title}}</h5>
+                  <p>Rate : {{project.rate}}</p>
+                  <p class="mb-1">{{project.details}}</p>
+            </div>
+    </div>
+  </a>
+{%endfor%}    
+</div>
+
+{% endblock %}
+
+
